@@ -1,0 +1,93 @@
+/* 🌌 Full Gradient Background */
+.about-wrapper {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 60px 30px;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 900px;
+  margin: 100px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 🖋️ Main Title */
+.main-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* 📌 Section Titles */
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #aabaff;
+}
+
+/* 📋 Tables */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.info-table th,
+.info-table td {
+  padding: 12px 18px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-table th {
+  width: 200px;
+  font-weight: 500;
+  color: #cfcfe6;
+}
+
+.info-table td {
+  color: #ffffff;
+}
+
+/* 🏅 Lists */
+.info-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.info-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #6f6fff;
+  font-size: 1.2rem;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .about-wrapper {
+    padding: 30px 20px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .info-table th {
+    width: 150px;
+  }
+}

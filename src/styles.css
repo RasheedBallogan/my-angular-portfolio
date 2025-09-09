@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/* 🌌 Full-Page Gradient Background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', sans-serif;
+  color: #f0f0f0;
+}
+
+/* 🧱 Ensure app fills the screen */
+app-root {
+  display: block;
+  min-height: 100vh;
+  padding: 20px;
+}
+

@@ -1,0 +1,40 @@
+<div class="about-wrapper">
+  <h1 class="main-title">About Me</h1>
+
+  <section class="info-block">
+    <h2 class="section-title">{{ title1 }}</h2>
+    <table class="info-table">
+      <tr><th>Full Name</th><td>{{ name }}</td></tr>
+      <tr><th>Age</th><td>{{ age }}</td></tr>
+      <tr><th>Gender</th><td>{{ gender }}</td></tr>
+      <tr><th>Date of Birth</th><td>{{ date_of_birth }}</td></tr>
+      <tr><th>Place of Birth</th><td>{{ place_of_birth }}</td></tr>
+      <tr><th>Contact No.</th><td>{{ contact_number }}</td></tr>
+      <tr><th>Address</th><td>{{ address }}</td></tr>
+    </table>
+  </section>
+
+  <section class="info-block">
+    <h2 class="section-title">{{ title2 }}</h2>
+    <table class="info-table">
+      <tr>
+        <th>College</th>
+        <td [innerHTML]="college"></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="info-block" *ngIf="title3 && awards">
+    <h2 class="section-title">{{ title3 }}</h2>
+    <ul class="info-list">
+      <li *ngFor="let award of awards">{{ award }}</li>
+    </ul>
+  </section>
+
+  <section class="info-block" *ngIf="title4 && skills">
+    <h2 class="section-title">{{ title4 }}</h2>
+    <ul class="info-list">
+      <li *ngFor="let skill of skills">{{ skill }}</li>
+    </ul>
+  </section>
+</div>
